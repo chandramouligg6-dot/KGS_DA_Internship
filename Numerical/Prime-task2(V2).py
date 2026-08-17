@@ -56,7 +56,7 @@ for num in range(start, end + 1):
 
     print("Factors:", end=" ")
     Factors(num)
-    print()  # Newline after factors print
+    print()
 
     print("Number of factors:", countFactors(num))
     print("Cycles taken:", countFactorsCycles(num))
