@@ -20,8 +20,14 @@ end = int(input("Enter end of range: "))
 
 print(f"\nPrime numbers between {start} and {end} are:")
 
+print("\nThe Prime Number are:",)
 for num in range(start, end + 1):
     if isPrime(num):
-        print(num, end=" ")
+        print(num,end=" ")
 
-print()  
+print()
+
+print("\nThe NON-Prime Numbers are:",)  
+for num in range(start, end + 1):
+    if not isPrime(num):
+        print(num,end=" ")
