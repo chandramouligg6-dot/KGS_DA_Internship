@@ -10,5 +10,5 @@ def fibonacci(pos):
         n1 = n2
         n2 = temp
 
-pos = int(input("Enter the number of terms: "))
-fibonacci(pos)
+num = int(input("Enter the number of terms: "))
+fibonacci(num)

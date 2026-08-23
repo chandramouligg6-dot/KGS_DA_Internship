@@ -17,7 +17,7 @@ def isReverse(n):
     
     return rev
     
-n = int(input("Enter how many natural numbers (n): "))
+n = int(input("Enter how many natural numbers: "))
 print(f"\nThe first {n} natural numbers in reverse order:")
 
 for i in range(1, n + 1):

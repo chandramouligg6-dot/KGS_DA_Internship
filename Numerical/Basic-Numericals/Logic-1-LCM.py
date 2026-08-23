@@ -1,4 +1,4 @@
-# WAP t oprint an LCM of two numbers with custmised function.
+# WAP to print an LCM of two numbers with custmised function.
 
 def LCMLogic1(n1,n2):
     lcm = n1
