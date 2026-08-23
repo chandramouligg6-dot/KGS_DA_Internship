@@ -26,6 +26,7 @@ def countFactorsCycles(n):
         i += 1
     return cycles
 
+
 num = int(input("Enter the number: "))
 print("\nThe factors of", num, "are:", end=" ")
 Factors(num)

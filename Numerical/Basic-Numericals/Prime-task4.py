@@ -1,29 +1,36 @@
-#​WAP to display first "n" Prime Num's and first "n" Non Prime Num's.
+#​ WAP to display first "n" Prime Num's and first "n" Non Prime Num's.
 
 def isPrime(n):
-    if n <=1:
+    if n < 2:
         return False
-    for i in range(2,n):
-        if n % i==0:
-            return False
-    return True
+    count = 0
+    i = 1
+    while i * i <= n:
+        if n % i == 0:
+            count += 1
+            if i != n // i:
+                count += 1
+        i += 1
+    return count == 2
 
-n = int(input("Enter the number of prime and non-prime numbers to display: "))
+n = int(input("Enter the value of n: "))
+
+print(f"\nThe first {n} Prime numbers are:")
 prime_count = 0
-non_prime_count = 0
-num = 2
-
-print(f"First {n} prime numbers are:")
+current_num = 2
 while prime_count < n:
-    if isPrime(num):
-        print(num, end=" ")
+    if isPrime(current_num):
+        print(current_num, end=" ")
         prime_count += 1
-    num += 1
+    current_num += 1
+print()
 
-print(f"\nFirst {n} non-prime numbers are:")
-num = 2
+print(f"\nThe first {n} Non-Prime numbers are:")
+non_prime_count = 0
+current_num = 1
 while non_prime_count < n:
-    if not isPrime(num):
-        print(num, end=" ")
+    if not isPrime(current_num):
+        print(current_num, end=" ")
         non_prime_count += 1
-    num += 1
+    current_num += 1
+print()
