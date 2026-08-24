@@ -15,4 +15,4 @@ lcm = n1
 if n2 > n1:
     lcm = n2
 res = findLCM(n1,n2,lcm)
-print("The LCM of",n1,"and",n2,"is: ",res)
+print("The LCM of",n1,"and",n2,"is: ",res)  
