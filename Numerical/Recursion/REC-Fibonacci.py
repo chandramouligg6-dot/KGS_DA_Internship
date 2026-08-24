@@ -7,4 +7,4 @@ def findFibonacci(pos, n1, n2):
     findFibonacci((pos-1), n2, (n1+n2))
 
 pos = int(input("Enter a number: "))
-findFibonacci(pos,0,1) 
+findFibonacci(pos,0,1)
