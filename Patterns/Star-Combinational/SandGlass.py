@@ -1,5 +1,4 @@
 
-
 n=int(input("Enter the number: "))
 
 noc=n
