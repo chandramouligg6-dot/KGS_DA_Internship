@@ -2,10 +2,10 @@
 
 def isReverse(n):
     temp = n
+    rev = 0
     
     if n < 0:
         n = n * (-1)
-    rev = 0
     
     while n > 0:
         rem = n % 10
