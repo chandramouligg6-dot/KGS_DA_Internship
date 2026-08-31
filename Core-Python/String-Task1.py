@@ -1,52 +1,57 @@
-# Version 3
+#1) str = "R A M A "
+str = "R A M A "
+result = " "
+for char in str:
+    if char != " ":
+        result += char
+print("Original String is: ",str)
+print("New sting is: ",result)
+print("="*50)
 
-class Employee:
-    company_name = "Health-Link"
-    employee_count = 1000
+# 2) I/p = Rama
+#    O/p = amaR
+str1 = "lewis"
+result1 = " "
+for i in str1:
+    result1 = i + result1
+print("Original string is: ",str1)
+print("Reversed string is: ",result1)
+print("="*50)
 
-    def __init__(self, employee_name, department):
-        self.employee_name = employee_name
-        self.department = department
+# 3) I/p = "Kaizentrix globaal solutions"
+#    O/p = "solutions globaal Kaizentrix"
 
-    def generate_employee_id(self):
-        Employee.employee_count += 1
-        employee_id = "EMP" + "HLS" + str(Employee.employee_count)
-        return employee_id
+s1 = "Kaizentrix globaal solutions"
+s2 = s1.split()
+print(s2)
+print(len(s2))
+new = ""
+for i in s2:
+    new = i + " " + new
+print(new)
+print("="*50)
 
-    def display_details(self, index):
-        emp_id = self.generate_employee_id()
-        print(f"\n--- Employee #{index} ---")
-        print(f"Company Name         : {Employee.company_name}")
-        print(f"Employee Name        : {self.employee_name}")
-        print(f"Department           : {self.department}")
-        print(f"Generated Employee ID: {emp_id}")
-        print("-" * 40)
+# 4) I/p = "Hello"
+#    O/p = "Helo"
 
-print("=" * 50)
-print("WELCOME TO EMPLOYEE REGISTRATION SYSTEM")
-print("=" * 50)
+input_str = "Hello"
+res = ""
 
-num_employees = int(input("\nHow many employee details do you want to add? "))
+for char in input_str:
+    if char not in res:
+        res += char
+print(res)
 
-while num_employees <= 0:
-    print("Please enter a positive number!")
-    num_employees = int(input("\nHow many employee details do you want to add? "))
+# 5) I/p = "Rama is sleeping and Rama is snooring"
+#    O/p = "Rama is sleeping and snooring"
 
-print(f"\nGreat! You are adding employees.")
-print("-" * 50)
+string1 = "Rama is sleeping and Rama is snooring"
+words = string1.split()
+print(len(words))
+seen_words = " "
 
-for i in range(num_employees):
-    print(f"\n--- Entering details for Employees ---")
-    name = input("Enter Employee Name: ")
-    dept = input("Enter Department: ")
-    
-    emp = Employee(name, dept)
-    emp.display_details(i+1)
+for word in words:
+    seen_words = seen_words + " "+ word
 
-print("\n" + "=" * 50)
-print("SUMMARY")
-print("=" * 50)
-print(f"Total Employees Added: {num_employees}")
-print(f"Total Employees in System: {Employee.employee_count - 1000}")
-print(f"Company: {Employee.company_name}")
-print("=" * 50)
+print("Original string:", string1)
+print("Output string:  ", seen_words)
