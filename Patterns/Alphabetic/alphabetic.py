@@ -12,7 +12,7 @@ for i in range(1, n + 1):
 
 
 
-#     D C B A 
+# D C B A 
 # D C B 
 # D C 
 # D
