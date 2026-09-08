@@ -16,14 +16,11 @@ def selectionSortDesc(arr):
         actualInd = n - 1 - i
         currMinInd = 0
         currMinEle = 2 ** 31
-
         for j in range(0, n - i):
             if arr[j] < currMinEle:
                 currMinEle = arr[j]
                 currMinInd = j
-
         arr[actualInd], arr[currMinInd] = arr[currMinInd], arr[actualInd]
-
     return arr
 
 
