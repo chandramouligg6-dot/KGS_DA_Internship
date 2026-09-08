@@ -27,8 +27,8 @@ def selectionSortAsc(arr):
 # Main program
 print("Enter an array to be created (enter any non-number to stop)...")
 arr = createIntarray()
-
 print("The created array is:", arr)
+
 # Fixed case: selectionSortAsc instead of selectionsortasc
 selectionSortAsc(arr)
 print("Sorted Array:", arr)
