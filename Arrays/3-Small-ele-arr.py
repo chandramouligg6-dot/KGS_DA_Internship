@@ -9,7 +9,7 @@ def createIntarray():
         except Exception:
             return l1
 
-def findMaxElement(arr):
+def findMinElement(arr):
     maxele = 2 ** 31
     maxeleind = 0
 
@@ -23,5 +23,5 @@ print("Enter an array to be created (enter any non-number to stop)...")
 arr = createIntarray()
 print("The created array is:", arr)
 
-resele, resind = findMaxElement(arr)
+resele, resind = findMinElement(arr)
 print("The smallest element is:", resele, "found at index:", resind)
